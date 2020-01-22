@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url('\bootstrap\css\bootstrap.min.css') }}" >
 
     <title>@yield('title')</title>
   </head>
@@ -20,9 +20,9 @@
         </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="/">Home</a>
-        <a class="nav-item nav-link" href="/about">About</a>
-        <a class="nav-item nav-link" href="/mahasiswa">Mahasiswa</a>
+        <a class="nav-item nav-link active" href="{{ url('/')}}">Home</a>
+        <a class="nav-item nav-link" href="{{ url('/about')}}">About</a>
+        <a class="nav-item nav-link" href="{{ url('/mahasiswa')}}">Mahasiswa</a>
         <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </div>
     </div>

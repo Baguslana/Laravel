@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-10">
-                <h1 class="mt-3">My Form</h1>
+                <h1 class="mt-3">Form {{$nama}}</h1>
             </div>
         </div>
     </div>
